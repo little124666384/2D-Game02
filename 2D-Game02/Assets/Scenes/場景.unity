@@ -2148,6 +2148,7 @@ GameObject:
   - component: {fileID: 965656480}
   - component: {fileID: 965656479}
   - component: {fileID: 965656466}
+  - component: {fileID: 965656465}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2182,7 +2183,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 965656463}
   selectedCommands:
-  - {fileID: 965656478}
+  - {fileID: 965656465}
   variables:
   - {fileID: 965656382}
   - {fileID: 965656460}
@@ -2359,7 +2360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 232.15984
+    x: 231.15984
     y: 74.53909
     width: 120
     height: 40
@@ -5046,6 +5047,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 965656462}
   - {fileID: 965656478}
+  - {fileID: 965656465}
   - {fileID: 965656464}
 --- !u!114 &965656464
 MonoBehaviour:
@@ -5061,6 +5063,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 100
   indentLevel: 0
+--- !u!114 &965656465
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965656366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 115
+  indentLevel: 1
+  targetClickable2D: {fileID: 489982324}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &965656466
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5138,7 +5158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 965656463}
-  clickableObject: {fileID: 0}
+  clickableObject: {fileID: 489982324}
   waitFrames: 1
 --- !u!114 &965656468
 MonoBehaviour:
